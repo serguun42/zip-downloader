@@ -1,0 +1,9 @@
+{
+	"verbose": false,
+	"env": {
+		"NODE_ENV": "development"
+	},
+	"ignore": [".git", "node_modules"],
+	"watch": ["zip-downloader.js", "util/", "config/"],
+	"ext": "js, json, css, html"
+}
