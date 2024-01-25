@@ -29,11 +29,12 @@ See [Typescript Declaration File](./types/zipdownloaderconfig.d.ts) for it (same
 
 #### ZipDownloaderConfig
 
-| parameter | description                                                  | type                            | default     |
-| --------- | ------------------------------------------------------------ | ------------------------------- | ----------- |
-| `port`    | Zip Downloader server's port.                                | `number`                        | `80`        |
-| `host`    | Zip Downloader server's host.                                | `string`                        | `"0.0.0.0"` |
-| `https`   | Use https serving instead of http. If not set, http applies. | [`HTTPSOptions`](#httpsoptions) | `null`      |
+| parameter | description                                                                                                                                                     | type                            | default     |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- | ----------- |
+| `port`    | Zip Downloader server's port.                                                                                                                                   | `number`                        | `80`        |
+| `host`    | Zip Downloader server's host.                                                                                                                                   | `string`                        | `"0.0.0.0"` |
+| `paths`   | Allowed paths to be zipped and sent (e.g.: with `"paths": ["/mnt/shareable", "/opt/data"]` everything under _/mnt/shareable_ and _/opt/data_ can be downloaded) | `string[]`                      | `[]`        |
+| `https`   | Use https serving instead of http. If not set, http applies.                                                                                                    | [`HTTPSOptions`](#httpsoptions) | `null`      |
 
 #### HTTPSOptions
 

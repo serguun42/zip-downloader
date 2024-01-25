@@ -1,8 +1,6 @@
 {
-	"port": 9080,
+	"port": 80,
 	"host": "0.0.0.0",
-	"https": {
-		"cert": "/home/user/keys/cert.pem",
-		"key": "/home/user/keys/key.pem"
-	}
+	"paths": [],
+	"https": null
 }

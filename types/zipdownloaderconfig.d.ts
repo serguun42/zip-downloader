@@ -18,6 +18,13 @@ export interface ZipDownloaderConfig {
 	 */
 	host?: string;
 	/**
+	 * Allowed paths to be zipped and sent
+	 * (e.g.: with `"paths": ["/mnt/shareable", "/opt/data"]`
+	 * everything under _/mnt/shareable_ and _/opt/data_ can be downloaded)
+	 * @default []
+	 */
+	paths?: string[];
+	/**
 	 * Use https serving instead of http. If not set, http applies.
 	 * @default null
 	 */
